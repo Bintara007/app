@@ -30,8 +30,10 @@ jobs:
       run: chmod +x gradlew
 
     - name: Build with Gradle
-      # Karena app terdeteksi sebagai root, kita jalankan assembleDebug langsung
-      run: ./gradlew assembleDebug --no-daemon
+      # Menggunakan perintah list task terlebih dahulu jika gagal, lalu mencoba build standard
+      run: |
+        ./gradlew tasks
+        ./gradlew assembleDebug --no-daemon
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
