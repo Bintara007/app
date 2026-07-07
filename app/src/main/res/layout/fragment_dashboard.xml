@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Shizuku Status -->
+    <TextView
+        android:id="@+id/tvShizukuStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shizuku Status: Checking..."
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="?attr/colorPrimary"
+        android:layout_marginBottom="16dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRequestShizuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request Shizuku Permission" />
+
+    <!-- Live Monitor -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="System Monitor (Live)"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvLiveStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Waiting for data..."
+        android:fontFamily="monospace"
+        android:textSize="14sp"/>
+
+    <!-- Smart Optimize -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOptimize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Run Smart Optimize" />
+
+    <TextView
+        android:id="@+id/tvOptimizeResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Ready"/>
+</LinearLayout>

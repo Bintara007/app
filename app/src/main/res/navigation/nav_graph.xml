@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_dashboard">
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.optimizetool.ui.dashboard.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/nav_resolution"
+        android:name="com.example.optimizetool.ui.resolution.ResolutionFragment"
+        android:label="Resolution Manager"
+        tools:layout="@layout/fragment_resolution" />
+
+    <fragment
+        android:id="@+id/nav_aim_panel"
+        android:name="com.example.optimizetool.ui.aimpanel.AimPanelFragment"
+        android:label="Aim Panel Profile"
+        tools:layout="@layout/fragment_aim_panel" />
+</navigation>
